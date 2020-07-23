@@ -60,7 +60,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 
 ### Create Springboot App Image
 ```
-docker build -t springboot-mysql:1.0.0 .
+docker build --build-arg ENVIRONMENT=prod -t springboot-mysql:1.0.0 .
 ```
 
 ### Run MySQL Image
